@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Seu Site de Passagens</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="">BB Milhas</h1>
+  </header>
+
+  <section>
+    <h2>Pesquisar Voos</h2>
+    <form>
+      <label for="origem">Origem:</label>
+      <input type="text" id="origem" name="origem">
+
+      <label for="destino">Destino:</label>
+      <input type="text" id="destino" name="destino">
+
+      <label for="passageiros">Quantidade de Passageiros:</label>
+      <input type="number" id="passageiros" name="passageiros" min="1" max="10">
+
+      <label for="companhias">Companhias Aéreas:</label>
+      <select id="companhias" name="companhias">
+        <option value="">Selecione uma opção</option>
+        <option value="latam">LATAM</option>
+        <option value="azul">Azul</option>
+        <option value="gol">GOL</option>
+        <option value="avianca">Avianca</option>
+      </select>
+
+      <button type="submit">Pesquisar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Seu Site de Passagens. Todos os direitos reservados.</p>
+  </footer>
+  <footer>
+    <p class="footer-text">Entre em Contato</p>
+    <p class="footer-text">Entre em contato conosco pelo WhatsApp:</p>
+    <a href="https://api.whatsapp.com/" class="whatsapp-button">WhatsApp</a>
+  </footer>
+  
+</body>
+
+</html>
+
+
+

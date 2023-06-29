@@ -1,0 +1,118 @@
+/* Estilos globais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Estilos do header */
+header {
+  background-color: #ff5733;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Estilos do formulário de pesquisa */
+.form {
+  max-width: 100vh;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.form-row label {
+  flex-basis: 20%;
+  font-weight: bold;
+}
+
+.form-row input[type="text"],
+.form-row input[type="number"],
+.form-row select {
+  flex-basis: 30%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button[type="submit"] {
+  background-color: #ff5733;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #ff4500;
+}
+
+/* Estilos do botão WhatsApp */
+.whatsapp-button {
+  display: inline-block;
+  background-color: #25d366;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #128c7e;
+}
+
+/* Estilos do footer */
+footer {
+  background-color: #ff5733;
+  padding: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Estilos do footer */
+footer {
+  background-color: #ff5733;
+  padding: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Estilos para centralizar o texto no footer */
+.footer-text {
+  text-align: center;
+}
+
+
