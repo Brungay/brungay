@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBMilhas - Venda de Passagens Aéreas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css"/>
+    
+
+<script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+<body>
+    <header>
+        <h1>BBMilhas - Venda de Passagens Aéreas</h1>
+    </header>
+
+    <section id="busca">
+        <h2>Encontre sua Passagem</h2>
+        <form action="resultado.html" method="get">
+            <div class="input-group">
+                <label for="origem">Origem:</label>
+                <input type="text" id="origem" name="origem" required>
+            </div>
+            <div class="input-group">
+                <label for="destino">Destino:</label>
+                <input type="text" id="destino" name="destino" required>
+            </div>
+            <div class="input-group">
+                <label for="data-ida">Data de Ida:</label>
+                <input type="date" id="data-ida" name="data-ida" required>
+            </div>
+            <div class="input-group">
+                <label for="data-volta">Data de Volta (opcional):</label>
+                <input type="date" id="data-volta" name="data-volta">
+            </div>
+            <div class="input-group">
+                <label for="adultos">passageiros:</label>
+                <input type="number" id="adultos" name="adultos" min="1" required>
+            
+            </div>
+            <input type="submit" value="Buscar Passagens">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 BBMilhas</p>
+    </footer>
+    <py-script>
+        import urllib.request
+pagina=urllib.request.urlopen("https://www.flytap.com/pt-br/?anetwork=PAIDSEARCH&gclsrc=aw.ds&gclid=CjwKCAjw3dCnBhBCEiwAVvLcu2wd7c_OGnIrxwj6GU0Gwr7W6T-69GGSnYYRNxI2XzGSZOGDLaE5HRoCOPAQAvD_BwE")
+texto=pagina.read().decode("utf8")
+print(texto)
+
+dado=texto(0:50)
+print(dado)
+    </py-script>
+</body>
+</html>
