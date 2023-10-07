@@ -1,0 +1,289 @@
+/* Estilo do corpo do site */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F8F8F8; /* Fundo neutro */
+    margin: 0;
+    padding: 0;
+}
+
+.background-section {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+}
+
+/* CSS para adicionar uma imagem de fundo à seção */
+.secao-com-imagem {
+    background-image: url('aviao.jpg'); /* Substitua 'caminho_da_imagem.jpg' pelo caminho real da sua imagem */
+    background-size: auto 290px; /* Ajusta o tamanho da imagem para cobrir toda a seção */
+    background-position: center; /* Centraliza a imagem na seção */
+    z-index: -2; /* Define um valor de z-index negativo para colocar o vídeo atrás de outros elementos */
+}
+
+
+/* Fundo da página */
+.background-section {
+    width: 100%; /* Define a largura como 100% da largura do elemento pai */
+    height: 100%; /* Define a altura como 100% da altura do elemento pai */
+    position: absolute; /* Define uma posição absoluta para que a seção de fundo cubra toda a tela */
+    top: 0; /* Alinha o topo da seção de fundo com o topo do elemento pai */
+    left: 0; /* Alinha a esquerda da seção de fundo com a esquerda do elemento pai */
+    z-index: -1; /* Define um valor de z-index negativo para colocar a seção de fundo atrás de outros elementos */
+}
+
+/* Vídeo de fundo */
+.banner video {
+    position: absolute; /* Define uma posição absoluta para o vídeo */
+    top: 0; /* Alinha o topo do vídeo com o topo do elemento pai (a seção de fundo) */
+    left: 0; /* Alinha a esquerda do vídeo com a esquerda do elemento pai (a seção de fundo) */
+    object-fit: cover; /* Redimensiona o vídeo para cobrir toda a seção de fundo mantendo a proporção */
+    width: 100%; /* Define a largura do vídeo como 100% da largura da seção de fundo */
+    height: 100%; /* Define a altura do vídeo como 100% da altura da seção de fundo */
+    z-index: -1; /* Define um valor de z-index negativo para colocar o vídeo atrás de outros elementos */
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #007BFF; /* Azul forte é frequentemente associado à confiança */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 20px solid #007BFF; /* Tom mais escuro de azul */
+}
+
+header h1 {
+    font-size: 50px;
+    margin: 0;
+    text-align: center;
+}
+
+/* Estilo do formulário de busca */
+section#busca {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #fff;
+    text-align: center;
+}
+
+section#busca h2 {
+    font-size: 35px;
+    color:  #fff;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #FF4500; /* Laranja para chamar a atenção */
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="number"] {
+    width: 10%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border:5px solid #007BFF; /* Azul forte */
+    border-radius: 13px;
+    font-size: 16px;
+}
+
+form input[type="submit"] {
+    background-color: #FF4500; /* Laranja é uma cor chamativa e sugere ação */
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 13px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+form input[type="submit"]:hover {
+    background-color: #FF6347; /* Laranja mais claro no hover */
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #FF4500;
+    color: #fff;
+    text-align: center;
+    padding: 1%;
+    margin-top: 500px; /* Adicione esta linha para definir a margem superior */
+}
+
+/* Estilização para links */
+a {
+    color: #FF4500; /* Laranja para chamar a atenção */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Reduzindo e alinhando os campos de preenchimento lado a lado */
+form .input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+form label {
+    flex: 1;
+    text-align: right;
+    padding-right: 10px;
+    margin: 0;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="number"] {
+    flex: 2;
+    width: auto;
+    padding: 8px;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Estilo do botão de busca */
+form input[type="submit"] {
+    background-color: #FF4500; /* Laranja é uma cor chamativa e sugere ação */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: radius 0px;
+    cursor: pointer;
+    font-family: "Arial";
+    transition: background-color 0.3s ease-in-out;
+}
+
+form input[type="submit"]:hover {
+    background-color: #FF6347; /* Laranja mais claro no hover */
+}
+
+/* Estilizando os campos de busca */
+form .input-group {
+    display: inline-block;
+    margin-right: 0%;
+    margin-top: 85px;
+    justify-content: center;
+    font-family: "Arial";
+    padding: 0%;
+    position: relative;
+    bottom: 0px; 
+    color: rgb(150, 150, 150);
+    cursor: text;
+    transition: 0.5s ease-in-out;
+    border: 100;
+    font-family: 'Gabarito', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Sora', sans-serif;
+    form .input-group {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    color: rgb(150, 150, 150);
+    cursor: text;
+    transition: 0.5s ease-in-out;
+    font-family: 'Gabarito', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Sora', sans-serif;
+    font-family: "Arial";
+    }
+    
+
+}
+
+form label {
+    display: inline-block;
+    margin: 0;
+    width: 80px; /* Largura do rótulo para alinhar os campos */
+    text-align: right;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="number"] {
+    width: 150px; /* Largura dos campos reduzida */
+    padding: 5px;
+    font-size: 14px;
+}
+
+/* Estilo do botão de busca */
+form input[type="submit"] {
+    background-color: #FF4500; /* Laranja é uma cor chamativa e sugere ação */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    transform: translate(320%, 50%);
+
+form input[type="submit"]:hover {
+    background-color: #FF6347; /* Laranja mais claro no hover */
+}
+
+#teste
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Arial";
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    width: 100%;
+    max-width: 350px;
+    padding: 2%;
+}
+
+.single-input{
+    position: relative;
+    margin: 30px 0;
+}
+.single-input label{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    color: rgb(150,150,150);
+    cursor: text;
+    transition: 0.5s ease-in-out;
+}
+
+.input{
+    width: 100%;
+    padding: 5px;
+    border: 0;
+    border-bottom: 2px solid rgb(200,200,200);
+    outline: 0;
+    font-size: 16px;
+    color: rgb(80,80,80);
+    transition: 0.5s ease-in-out;
+}
+
+.input:focus,
+.input:valid{
+    border-bottom: 2px solid cornflowerblue;
+}
+.input:focus ~ label,
+.input:valid ~ label{
+    transform: translateY(-24px);
+    font-size: 12px;
+    color: cornflowerblue;
+}
