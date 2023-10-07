@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&family=Roboto:ital,wght@0,400;0,700;1,900&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <title>BBMilhas - Venda de Passagens Aéreas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css"/>
+    
+
+<script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+<body>
+    <header>
+        <h1>BBMilhas - Venda de Passagens Aéreas</h1>
+    </header>
+
+    <section id="busca" class="secao-com-imagem">
+    </div>>
+        <h2>MAIS BARATO DO QUE DIRETO NAS CIAS AÉREAS, SUPORTE MAIS RÁPIDO DO MERCADO E ÉTICA DE TRABALHO </h2>
+            
+        </section>
+        
+        <form action="resultado.html" method="get" >
+            <div class="input-group">
+                <label for="origem">Origem:</label>
+                <input type="text" id="origem" name="origem" required>
+            </div>
+            <div class="input-group">
+                <label for="destino">Destino:</label>
+                <input type="text" id="destino" name="destino" required>
+            </div>
+            <div class="input-group">
+                <label for="ida">Ida:</label>
+                <input type="date" id="ida" name="ida" required>
+            </div>
+            <div class="input-group">
+                <label for="volta">Volta:</label>
+                <input type="date" id="volta" name="volta">
+            </div>
+            <div class="input-group">
+                <label for="adultos">passageiros:</label>
+                <input type="number" id="adultos" name="adultos" min="1" required>
+            
+            </div>
+            <input type="submit" value="Buscar Passagens">
+
+            <div class="background-section">
+                <video autoplay muted loop>
+                    <source src="praia.mp4" type="video/mp4">
+                </video>
+            </div>
+
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 BBMilhas</p>
+    </footer>
+    <py-script>
+        import urllib.request
+pagina=urllib.request.urlopen("https://www.flytap.com/pt-br/?anetwork=PAIDSEARCH&gclsrc=aw.ds&gclid=CjwKCAjw3dCnBhBCEiwAVvLcu2wd7c_OGnIrxwj6GU0Gwr7W6T-69GGSnYYRNxI2XzGSZOGDLaE5HRoCOPAQAvD_BwE")
+texto=pagina.read().decode("utf8")
+print(texto)
+
+dado=texto(0:50)
+print(dado)
+    </py-script>
+</body>
+</html>
